@@ -1,0 +1,73 @@
+/* Base styles for the entire document */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Soft light grey background */
+    color: #333; /* Darker text for better readability */
+}
+
+/* Header styles */
+header {
+    background-color: #6c7ae0; /* Rich blue background */
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    background: #404EED; /* Slightly darker blue for contrast */
+    padding: 10px 0;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Section styles */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white; /* White background for content areas */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* Footer styles */
+footer {
+    font-size: 0.8em;
+    color: #777;
+    background-color: #333; /* Dark footer for contrast */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0; /* More space around items in mobile view */
+    }
+    section {
+        margin: 10px; /* Smaller margin on small screens */
+    }
+    footer {
+        font-size: 0.9em; /* Slightly larger font in the footer for readability on small devices */
+        padding: 15px; /* More padding for better touch interaction */
+    }
+}
